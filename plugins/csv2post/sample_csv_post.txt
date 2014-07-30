@@ -1,0 +1,3 @@
+wp_title|wp_post_date|wp_category|wp_content|field1|field2|field3
+My Post Title|2007-12-31 23:59:59|fun-stuff|Long post text|value|value|valaue
+Another Post|2008-01-31 23:59:59|fun-stuff|Long post text|value|value|valaue

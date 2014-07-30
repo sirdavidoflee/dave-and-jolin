@@ -1,0 +1,20 @@
+button.btn  { top: 7px; overflow: hidden; }
+button.one { top: 15px; }
+button.btn span.text { overflow: visible; margin: 0; }
+button.btn span.left, button.btn span.right { display: none; }
+
+a.email { position: relative; top: -5px; }
+ 
+#content { }
+#callouts { width: 300px; }
+
+#sky #siteNav ul li { height: 1%; }
+#sky #siteNav ul li dt a { margin: 0 0 -3px; }
+#sky #siteNav ul li dd ul li dd, #sky #siteNav ul li.on dd ul li dd { left: 148px; z-index: 2000; }
+
+#newsletter form button { right: 4px; width: 100px; }
+#search form button { right: 4px; width: 50px; }
+
+#callouts #ourBlog div.project-list li { float: left; }
+
+#slideShow dl { bottom: 30px; }

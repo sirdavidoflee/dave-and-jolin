@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Page Associator Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-13 06:51+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe\n"
+"Language-Team: Krzysztof Pietkiewicz <kpietkie@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-plugin-post-page-associator.php:85
+msgid "Associated Posts Settings"
+msgstr "Ustawienia Powiązanych Wpisów"
+
+#: ../wp-plugin-post-page-associator.php:86
+#: ../wp-plugin-post-page-associator.php:96
+msgid "Associated Posts"
+msgstr "Powiązane Wpisy"
+
+#: ../wp-plugin-post-page-associator.php:147
+msgid "Associate posts with this page"
+msgstr "Powiąż wpisy z tą stroną"
+
+#: ../meta_box.php:4
+msgid "Select posts by category"
+msgstr "Wybierz wpisy wg kategorii"
+
+#: ../meta_box.php:6
+#: ../meta_box.php:27
+#: ../meta_box.php:48
+msgid "Selection mode:"
+msgstr "Sposób wyboru:"
+
+#: ../meta_box.php:8
+msgid "Add to my selection: All posts which are at least in one of these categories."
+msgstr "Dodaj do mojego wyboru: Wszystkie wpisy będące przynajmniej w jednej z tych kategorii."
+
+#: ../meta_box.php:9
+msgid "Filter my selection: Only posts which are at least in one of these categories."
+msgstr "Ogranicz mój wybór: Tylko wpisy będące przynajmniej w jednej z tych kategorii."
+
+#: ../meta_box.php:10
+msgid "Add to my selection: All posts which are in all of these categories."
+msgstr "Dodaj do mojego wyboru: Wszystkie wpisy które są we wszystkich z tych kategorii."
+
+#: ../meta_box.php:11
+msgid "Filter my selection: Only posts which are in all of these categories."
+msgstr "Ogranicz mój wybór: Tylko wpisy będące we wszystkich z tych kategorii."
+
+#: ../meta_box.php:12
+msgid "Do not care about categories."
+msgstr "Nie wybieraj wpisów wg kategorii."
+
+#: ../meta_box.php:25
+msgid "Select posts by tag"
+msgstr "Wybierz wpisy wg tagu"
+
+#: ../meta_box.php:29
+msgid "Add to my selection: All posts which are tagged with at least one of these tags."
+msgstr "Dodaj do mojego wyboru: Wszystkie wpisy oznaczone przynajmniej jednym z tych tagów."
+
+#: ../meta_box.php:30
+msgid "Filter my selection: Only posts which are tagged with at least one of these tags."
+msgstr "Ogranicz mój wybór: Tylko wpisy oznaczone przynajmniej jednym z tych tagów."
+
+#: ../meta_box.php:31
+msgid "Add to my selection: All posts which are tagged with all of these tags."
+msgstr "Dodaj do mojego wyboru: Wszystkie wpisy oznaczone wszystkimi z tych tagów."
+
+#: ../meta_box.php:32
+msgid "Filter my selection: Only posts which are tagged with all of these tags."
+msgstr "Ogranicz mój wybór: Tylko wpisy oznaczone wszystkimi z tych tagów."
+
+#: ../meta_box.php:33
+msgid "Do not care about tags."
+msgstr "Nie wybieraj wpisów wg tagów."
+
+#: ../meta_box.php:46
+msgid "Select posts by author"
+msgstr "Wybierz wpisy wg autora"
+
+#: ../meta_box.php:50
+msgid "Add to my selection: All posts by these authors."
+msgstr "Dodaj do mojego wyboru: Wszystkie wpisy tych autorów."
+
+#: ../meta_box.php:51
+msgid "Filter my selection: Only posts by these authors."
+msgstr "Ogranicz mój wybór: Tylko wpisy tych autorów."
+
+#: ../meta_box.php:52
+msgid "Do not care about authors."
+msgstr "Nie wybieraj wpisów wg autorów."
+
+#: ../meta_box.php:64
+msgid "Select posts explicitly (Additionally to your Selection.)"
+msgstr "Wybierz wpisy (Dodatkowo do już wybranych.)"
+
+#: ../meta_box.php:69
+#, php-format
+msgid "Post %s (Without title)"
+msgstr "Wpis %s (Bez tytułu)"
+
+#: ../meta_box.php:78
+msgid "Number of posts:"
+msgstr "Ilość wpisów:"
+
+#: ../meta_box.php:78
+msgid "Leave blank to show all."
+msgstr "Pozostaw puste by pokazać wszystkie."
+
+#: ../meta_box.php:82
+msgid "Offset:"
+msgstr "Zacznij od:"
+
+#: ../meta_box.php:82
+msgid "Leave blank to start with the first post."
+msgstr "Pozostaw puste żeby zacząć od pierwszego wpisu."
+
+#: ../meta_box.php:83
+#: ../meta_box.php:88
+#, php-format
+msgid "This feature is only available in <a href=\"%s\" target=\"_blank\">Associated Posts Pro</a>."
+msgstr "Ta opcja jest dostępna jedynie w wersji Pro - <a href=\"%s\" target=\"_blank\">Associated Posts Pro</a>."
+
+#: ../meta_box.php:87
+msgid "Posts per page:"
+msgstr "Wpisów na stronę:"
+
+#: ../meta_box.php:87
+msgid "Leave blank to show all posts on one page."
+msgstr "Pozostaw puste by pokazać wszystkie wpisy na stronie."
+
+#: ../meta_box.php:93
+msgid "Order posts by:"
+msgstr "Sortuj wpisy wg:"
+
+#: ../meta_box.php:104
+msgid "Order:"
+msgstr "Sortuj:"
+
+#: ../meta_box.php:106
+msgid "Descending"
+msgstr "Malejąco"
+
+#: ../meta_box.php:107
+msgid "Ascending"
+msgstr "Narastająco"
+
+#: ../meta_box.php:112
+#: ../meta_box.php:116
+#: ../meta_box.php:117
+#: ../options_page.php:70
+#: ../options_page.php:71
+msgid "Buy the Pro-Version"
+msgstr "Kup wersję Pro"
+
+#: ../meta_box.php:122
+msgid "Template"
+msgstr "Szablon"
+
+#: ../meta_box.php:134
+#: ../meta_box.php:136
+#: ../options_page.php:27
+#: ../options_page.php:29
+msgid "by"
+msgstr "wg"
+
+#: ../options_page.php:1
+msgid "Position"
+msgstr "Pozycja"
+
+#: ../options_page.php:4
+msgid "Append the associated posts to the pages content."
+msgstr "Dołącz powiązane wpisy po treści stron (na końcu)."
+
+#: ../options_page.php:8
+msgid "Prepend the associated posts to the pages content."
+msgstr "Przyklej powiązane wpisy przed treścią stron (na początku)."
+
+#: ../options_page.php:12
+msgid "<b>Do not</b> show the associated posts to the pages automatically. (In this case you have to add the short code manually.)"
+msgstr "<b>Nie</b> pokazuj powiązanych wpisów automatycznie na stronie. (W tym przypadku musisz na stronie ręcznie dodać \"short code\".)"
+
+#: ../options_page.php:16
+msgid "Templates"
+msgstr "Szablony"
+
+#: ../options_page.php:32
+#, php-format
+msgid "Found in <em>%s</em>."
+msgstr "Znalezione w <em>%s</em>."
+
+#: ../options_page.php:41
+msgid "Do not show any text of the associated posts. (Only the title with link to the post.)"
+msgstr "Nie pokazuj treści powiązanych wpisów. (Jedynie tytuł z łączem do wpisu.)"
+
+#: ../options_page.php:46
+msgid "Show an excerpt of the associated posts."
+msgstr "Pokaż wstęp powiązanych wpisów."
+
+#: ../options_page.php:51
+msgid "Show a post thumbnail of the associated posts."
+msgstr "Pokaż miniaturkę powiązanych wpisów."
+
+#: ../options_page.php:56
+msgid "Show the full text of the associated posts."
+msgstr "Pokaż pełne powiązane wpisy."
+
+#: ../options_page.php:61
+msgid "Miscellaneous"
+msgstr "Inne"
+
+#: ../options_page.php:64
+msgid "Please hide the Associated Posts Pro banner. Of course I will buy it."
+msgstr "Proszę nie pokazywać reklamy wersji Pro. Oczywiście zakupię ją."
+

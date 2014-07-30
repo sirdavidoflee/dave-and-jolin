@@ -1,0 +1,6 @@
+
+button.btn { top: 7px; }
+button.btn span.text { padding-right: 10px; }
+button.btn span.right { right: 0; }
+
+#newsletter form button { right: 4px; }
