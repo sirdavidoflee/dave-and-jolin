@@ -15,9 +15,9 @@ $pageUrl = urlencode(get_the_permalink());
 <?php
 	if(has_post_thumbnail()):
 ?>
-<div class="entry-media">
+<!-- <div class="entry-media">
 	<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt="<?php echo get_the_title() ?>" itemprop="image" />
-</div>
+</div> -->
 <?php
 	endif;
 ?>
