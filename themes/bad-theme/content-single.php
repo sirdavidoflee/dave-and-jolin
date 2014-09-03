@@ -9,7 +9,8 @@ $pageUrl = urlencode(get_the_permalink());
 <?php edit_post_link( __( 'Edit', '_s' ), '<span class="edit-link">', '</span>' ); ?>
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 <div class="entry-meta">
-	<?php bad_theme_posted_on(); ?>
+	<?php bad_theme_posted_on(); ?><br/>
+	<?php printf( __( 'Tags: %1$s', 'bad-theme' ), $tags_list ); ?>
 </div><!-- .entry-meta -->
 
 <?php
@@ -53,7 +54,6 @@ $pageUrl = urlencode(get_the_permalink());
 ?>
 <span class="tags-links">
     <span class="author vcard">Written by <a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>"><?php echo esc_html( get_the_author_meta('nickname') ) ?></a></span>
-    
-	<?php printf( __( 'Words vaguely related to this: %1$s', 'bad-theme' ), $tags_list ); ?>
+  
 </span>
 <?php endif; // End if $tags_list ?>
