@@ -75,7 +75,7 @@
 				<h2>Jolin's List</h2>
 				<ul>
 				<?php foreach($jolinChildren as $jos): ?>
-					<li><a href="<?php bloginfo('url'); ?>/dave/<?php echo $jos->slug; ?>"><?php echo $jos->name; ?></a></li>
+					<li><a href="<?php bloginfo('url'); ?>/jolin/<?php echo $jos->slug; ?>"><?php echo $jos->name; ?></a></li>
 				<?php endforeach; ?>
 				</ul>
 			</div>
@@ -83,7 +83,7 @@
 				<h2>Joint List</h2>
 				<ul>
 				<?php foreach($jointChildren as $joint): ?>
-					<li><a href="<?php bloginfo('url'); ?>/dave/<?php echo $joint->slug; ?>"><?php echo $joint->name; ?></a></li>
+					<li><a href="<?php bloginfo('url'); ?>/joint/<?php echo $joint->slug; ?>"><?php echo $joint->name; ?></a></li>
 				<?php endforeach; ?>
 				</ul>
 			</div>
