@@ -11,6 +11,8 @@
 	/* Methods
 	=============================================*/	
 		init: function(){
+			path = window.location.pathname.split('/');
+			$('body').addClass('category-' + path[1]);
 			
 			$('h6.caption').each(function(){
 				var imgWidth = $(this).prev('p').children('img').width();
