@@ -1,0 +1,279 @@
+header {
+	background: #adf2f2;
+	left: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	
+	@include box-shadow(0 0 17px 1px rgba(0,0,0,.16));
+	
+	.inner {
+		background: #adf2f2;
+		height: 100%;
+		margin: 0 auto;
+		max-width: 1080px;
+		position: relative;
+		width: 100%;
+		z-index: 5;
+	}
+	h1 {
+		font: 700 60px/66px $badFont;
+		padding: 5px 0 0;
+		text-align: center;
+		
+		@include transition(all 0.3s ease);
+		
+		a {
+			color: #414042;
+			text-decoration: none;
+			
+			&:hover {
+				color: #414042;
+				text-decoration: none;
+			}
+		}
+		span.amp {
+			font-family: "Helvetica";
+			font-size: 44px;
+			margin: 0 10px;
+		}
+	}
+	input {
+		border: none;
+		font-family: $general;
+		right: 4%;
+		padding: 10px 10px;
+		position: absolute;
+		top: 12px;
+		width: 200px;
+		z-index: 6;
+	}
+	nav {
+		//display: none;
+		//background: rgba(255,255,255, 0.8);
+		//height: 100%;
+		height: 1px;
+		position: absolute;
+		width: 100%;
+		
+		@include transition(all 0.3s ease);
+		
+		div {
+			left: -100%;
+			top: 0;
+			opacity: 0.1;
+			padding: 22px 40px 40px;
+			position: absolute;
+			width: 50%;
+			z-index: 3;
+			
+			@include transition(all 0.5s ease);
+			
+			h2 {
+				font-size: 27px;
+				padding: 0 0 10px;
+			}
+			
+			li {
+				display: inline-block;
+				margin: 0 0 5px;
+				
+				a {
+					background: rgba(255,255,255, 0.4);
+					color: #515151;
+					display: block;
+					font-weight: bold;
+					padding: 10px 24px;
+					text-decoration: none;
+					
+					@include transition(all 0.3s ease);
+					
+					&:hover {
+						background: rgba(255,255,255, 0.8);
+						text-decoration: none;
+					}
+				}
+			}
+			
+			&.nav-dave {
+				background: #c8f594;
+				text-align: right;
+			}
+			&.nav-jo {
+				background: #94c8f5;
+				left: auto;
+				right: -100%;
+			}
+			&.nav-both {
+				background: #efefef;
+				left: 50%;
+				text-align: center;
+				opacity: 1;
+				margin: 0 0 0 -250px;
+				right: auto;
+				top: -800px;
+				width: 500px;
+			}
+		}
+		.nav-bg {
+			background: rgba(255,255,255,0.1);
+			display: none;
+			height: 100%;
+			left: 0;
+			position: fixed;
+			width: 100%;
+			z-index: 2;
+		}
+		&.nav-open .nav-bg {
+			display: block;
+		}
+		
+		&.open-dave {
+			.nav-dave {
+				left: 0;
+				opacity: 1;
+			}
+		}
+		&.open-jo {
+			.nav-jo {
+				right: 0;
+				opacity: 1;
+			}
+		}
+		&.open-both {
+			.nav-both {
+				opacity: 1;
+				top: 0;
+			}
+		}
+	}
+	aside {
+		float: right;
+		padding: 0;
+		
+		@include transition(all 0.4s ease);
+		
+		input {
+			background: #fff;
+			border: 1px solid #eaeced;
+			float: left;
+			margin: 25px 15px 0 0;
+			padding: 3px 5px;
+			text-align: right;
+			width: 190px;
+		}
+		.social-share {
+			float: left;
+		}
+	}
+	&.hidden {
+		height: 100px;
+		
+		nav {
+			opacity: 0;
+		}
+		a.logo {
+			left: 0;
+			margin: -37px 0 0;
+		
+			span {
+				font-size: 180px;
+				line-height: 10px;
+				
+			}
+		}
+		.site-by {
+			margin: 59px 0 0;
+			padding: 0 0 0 187px;
+			
+			.home-by {
+				display: block;
+			}
+			.others-by {
+				display: none;
+			}
+		}
+		a.site-logo {
+			display: none;
+		}
+		aside {
+			padding: 13px 0 0;
+			
+			.social-share li {
+				font-size: 18px;
+				
+				a {
+					font-size: 18px;
+					padding: 6px 6px 2px 6px;
+				}
+				&.youtube a {
+					font-size: 60px;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+.admin-bar header {
+	top: 32px;
+}
+
+.mobile-no-nav {
+	background: rgba(255,255,255, 0.01);
+	height: 100%;
+	position: fixed;
+	right: -75%;
+	top: 70px;
+	width: 30%;
+	z-index: 1000;
+}
+nav.mobile-nav {
+	//display: none;
+	background: #fff;
+	height: 90%;
+	font: normal 24px/26px $general;
+	overflow-y: auto;
+	padding: 5%;
+	position: fixed;
+	right: -75%;
+	top: 70px;
+	width: 70%;
+	z-index: 1000;
+	
+	@include box-shadow(0 2px 2px rgba(1,1,1,.3));
+	@include transition(all 0.4s ease);
+	
+	.site-links {
+		li {
+			border-bottom: 1px solid #c7c8ca;
+			padding: 10px 0;
+		}
+	}
+	.social-share {
+		li {
+			
+		}
+		li.title {
+			display: block;
+			margin: 0 0 -14px;
+			padding: 20px 0 0;
+		}
+	}
+	
+	a {
+		color: #0065a4;
+	}
+	
+	input {
+		background: #fff;
+		border: 1px solid #eaeced;
+		float: left;
+		font-size: 16px;
+		margin: 25px 0 15px;
+		padding: 10px 15px;
+		width: 85%;
+	}
+	
+}

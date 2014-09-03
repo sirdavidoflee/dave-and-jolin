@@ -1,0 +1,173 @@
+footer {
+	background: #e5e8ea;
+	margin: 60px 0 0;
+	overflow: hidden;
+	
+	.inner {
+		margin: 0 auto;
+		max-width: 1081px;
+		padding: 53px 0 50px;
+		position: relative;
+		text-align: center;
+		width: 100%;
+	}
+	a.business-link {
+		bottom: 33px;
+		display: inline-block;
+		left: 0;
+		margin: 0;
+		position: absolute;
+		
+		span {
+			font-size: 180px;
+			line-height: 10px;
+		}
+		.hidden {
+			display: none;
+		}
+		.icon-usc-blue {
+			color: #1667a4;
+			display: block;
+		}
+		.icon-usc-red {
+			color: #ec3246;
+			display: block;
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+	}
+	.legal-and-links {
+		display: inline-block;
+		text-align: center;
+		
+		ul {
+			
+		}
+		
+		li {
+			border-right: 1px solid #969899;
+			display: inline-block;
+			font: normal 12px/12px $sansSerif;
+			padding: 0 12px;
+			letter-spacing: -.5px;
+			
+			&:last-child {
+				border: none;
+			}
+			
+			a {
+				color: #737475;
+				
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		h6 {
+			color: #969899;
+			font: normal 11px/11px $sansSerif;
+			letter-spacing: -.5px;
+			padding: 10px 0 0;
+			text-align: center;
+			
+			a {
+				color: #27aae1;
+				
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.social-outlets {
+		bottom: 25px;
+		position: absolute;
+		right: 0;
+		
+		h6 {
+			color: #737475;
+			font-family: $sansSerif;
+			font-weight: normal;
+			letter-spacing: 0;
+			text-align: right;
+		}
+		ul {
+			margin: -10px 0 0;
+		}
+		li {
+			display: inline-block;
+			font-size: 20px;
+			line-height: 20px;
+			margin: 0 10px 0 0;
+			
+			a {
+				color: #fff;
+				display: inline-block;
+				padding: 6px 6px 2px 6px;
+				position: relative;
+				vertical-align: middle;
+				
+				@include border-radius(25px);
+				@include transition(all 0.4s ease);
+				
+				span {
+					display: none;
+					font-size: 50px;
+					line-height: 50px;
+					
+					&.icon-yt-you {
+						color: #414042;
+						display: inline-block;
+					}
+					&.icon-yt-tube {
+						color: #dc232b;
+						display: block;
+						left: 0;
+						position: absolute;
+						top: 0;
+						
+						@include transition(all 0.4s ease);
+						
+						&:hover {
+							color: #f47185;
+						}
+					}
+				}
+			}
+			&:last-child {
+				margin: 0;
+			}
+			&.youtube a {
+				background: transparent;
+				border: none;
+				margin: 10px 5px 0 0;
+				padding: 0;
+				
+				@include border-radius(none);
+			}
+			&.twitter a {
+				background: #31abde;
+				
+				&:hover {
+					background: #70d1ee;
+				}
+				
+			}
+			&.facebook a {
+				background: #0d65a1;
+				
+				&:hover {
+					background: #2da0cb;
+				}
+			}
+			&.google a {
+				background: #ea3245;
+				
+				&:hover {
+					background: #f47185;
+				}
+			}
+		}
+	}
+}
