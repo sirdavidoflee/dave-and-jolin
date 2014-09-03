@@ -39,16 +39,19 @@
 				}
 			});
 			$('header h1 span').click(function(){
-				
-				if($(this).hasClass('show-dave')) {
+				if($('header nav').hasClass('nav-open')){				
 					$('header nav').removeClass('nav-open open-dave open-jo open-both');
-					$('header nav').addClass('nav-open open-dave');
-				} else if($(this).hasClass('show-jo')) {
-					$('header nav').removeClass('nav-open open-dave open-jo open-both');
-					$('header nav').addClass('nav-open open-jo');
-				} else {
-					$('header nav').removeClass('nav-open open-dave open-jo open-both');
-					$('header nav').addClass('nav-open open-both');
+				else {
+					if($(this).hasClass('show-dave')) {
+						$('header nav').removeClass('nav-open open-dave open-jo open-both');
+						$('header nav').addClass('nav-open open-dave');
+					} else if($(this).hasClass('show-jo')) {
+						$('header nav').removeClass('nav-open open-dave open-jo open-both');
+						$('header nav').addClass('nav-open open-jo');
+					} else {
+						$('header nav').removeClass('nav-open open-dave open-jo open-both');
+						$('header nav').addClass('nav-open open-both');
+					}
 				}
 			});
 			
