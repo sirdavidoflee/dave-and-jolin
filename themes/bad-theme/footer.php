@@ -12,7 +12,7 @@
 
 	<footer>
 		<div class="inner">
-			<h6>&copy; <?php echo date("Y") ?> ProbablyBad.com</h6>
+			<h6>&copy; <?php echo date("Y") ?> Dave &amp; Jolin</h6>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
