@@ -38,6 +38,19 @@
 					$('header nav').addClass('nav-open open-both');
 				}
 			});
+			$('header h1 span').click(function(){
+				
+				if($(this).hasClass('show-dave')) {
+					$('header nav').removeClass('nav-open open-dave open-jo open-both');
+					$('header nav').addClass('nav-open open-dave');
+				} else if($(this).hasClass('show-jo')) {
+					$('header nav').removeClass('nav-open open-dave open-jo open-both');
+					$('header nav').addClass('nav-open open-jo');
+				} else {
+					$('header nav').removeClass('nav-open open-dave open-jo open-both');
+					$('header nav').addClass('nav-open open-both');
+				}
+			});
 			$('.nav-bg').hover(function(){
 				$('header nav').removeClass('nav-open open-dave open-jo open-both');
 			});
