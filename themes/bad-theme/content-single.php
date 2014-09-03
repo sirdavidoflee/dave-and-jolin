@@ -10,7 +10,18 @@ $pageUrl = urlencode(get_the_permalink());
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 <div class="entry-meta">
 	<?php bad_theme_posted_on(); ?><br/>
-	<?php printf( __( 'Tags: %1$s', 'bad-theme' ), $tags_list ); ?>
+	
+	<?php
+		/* translators: used between list items, there is a space after the comma */
+		$tags_list = get_the_tag_list( '', __( ', ', 'bad-theme' ) );
+		if ( $tags_list ) :
+	?>
+	<span class="tags-links">
+	    <span class="author vcard">Written by <a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>"><?php echo esc_html( get_the_author_meta('nickname') ) ?></a></span>
+    
+		<?php printf( __( 'Tags: %1$s', 'bad-theme' ), $tags_list ); ?>
+	</span>
+	<?php endif; // End if $tags_list ?>
 </div><!-- .entry-meta -->
 
 <?php
