@@ -18,7 +18,7 @@ get_header(); ?>
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
-                            echo 'Catagory: <span>';
+                            echo 'Category: <span>';
 							single_cat_title();
                             echo '</span>';
 
