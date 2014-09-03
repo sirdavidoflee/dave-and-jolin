@@ -10,7 +10,7 @@
 
 
 
-$cat = get_the_category()[0];
+$cat = get_the_category();
 $category_query = new WP_Query('posts_per_page=2&offset=1&cat=' . $cat->cat_ID);
 $category_query->query_vars[ 'paged' ] > 1 ? $current = $category_query->query_vars[ 'paged' ] : $current = 1;
 
