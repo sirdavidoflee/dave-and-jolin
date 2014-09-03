@@ -15,13 +15,8 @@ $pageUrl = urlencode(get_the_permalink());
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', __( ', ', 'bad-theme' ) );
 		if ( $tags_list ) :
-	?>
-	<span class="tags-links">
-	    <span class="author vcard">Written by <a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>"><?php echo esc_html( get_the_author_meta('nickname') ) ?></a></span>
-    
-		<?php printf( __( 'Tags: %1$s', 'bad-theme' ), $tags_list ); ?>
-	</span>
-	<?php endif; // End if $tags_list ?>
+			printf( __( 'Tags: %1$s', 'bad-theme' ), $tags_list );
+		endif; // End if $tags_list ?>
 </div><!-- .entry-meta -->
 
 <?php
