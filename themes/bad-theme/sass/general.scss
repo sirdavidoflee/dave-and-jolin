@@ -13,7 +13,7 @@
 		}
 	}
 	.site-main h1 {
-		padding: 50px 0 30px;
+		padding: 0;
 	}
 	h2 {
 		color: #3e553d;
@@ -41,6 +41,10 @@
 		&:hover {
 			color: #5c91ad;
 		}
+	}
+	.entry-meta {
+		font-size: 12px;
+		line-height: 14px;
 	}
 	blockquote {
 		border-left: 3px solid #939c92;

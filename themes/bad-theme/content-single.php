@@ -7,6 +7,21 @@ $pageUrl = urlencode(get_the_permalink());
 
 ?>
 <?php edit_post_link( __( 'Edit', '_s' ), '<span class="edit-link">', '</span>' ); ?>
+
+<ul class="social-share">
+	<li class="title">Share</li>
+	<li class="twitter">
+		<a href="https://twitter.com/home?status=<?php echo $pageUrl ?>%3Futm_source%3Dpageshare%26utm_medium%3Dsocialshare%26utm_content%3Dtweet%26utm_campaign%3Dabb" class="bad-icon-twitter" target="_blank">
+			<span>Twitter</span>
+		</a>
+	</li>
+	<li class="facebook">
+		<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl ?>%3Futm_source%3Dpageshare%26utm_medium%3Dsocialshare%26utm_content%3Dfbpost%26utm_campaign%3Dabb" class="bad-icon-facebook" target="_blank">
+			<span>Facebook</span>
+		</a>
+	</li>
+</ul>
+
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 <div class="entry-meta">
 	<?php bad_theme_posted_on(); ?><br/>
@@ -28,20 +43,6 @@ $pageUrl = urlencode(get_the_permalink());
 <?php
 	endif;
 ?>
-
-<ul class="social-share">
-	<li class="title">Share</li>
-	<li class="twitter">
-		<a href="https://twitter.com/home?status=<?php echo $pageUrl ?>%3Futm_source%3Dpageshare%26utm_medium%3Dsocialshare%26utm_content%3Dtweet%26utm_campaign%3Dabb" class="bad-icon-twitter" target="_blank">
-			<span>Twitter</span>
-		</a>
-	</li>
-	<li class="facebook">
-		<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl ?>%3Futm_source%3Dpageshare%26utm_medium%3Dsocialshare%26utm_content%3Dfbpost%26utm_campaign%3Dabb" class="bad-icon-facebook" target="_blank">
-			<span>Facebook</span>
-		</a>
-	</li>
-</ul>
 
 <div class="entry-content">
 	<?php the_content(); ?>
