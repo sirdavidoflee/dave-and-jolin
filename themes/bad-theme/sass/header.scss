@@ -254,6 +254,9 @@ header {
 	header, header .inner {
 		background: #adf2f2;
 	}
+	header .back-home {
+		display: none;
+	}
 }
 
 .admin-bar header {
