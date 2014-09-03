@@ -25,7 +25,7 @@
 				}
 			});
 			
-			$('h1 span').hover(function(){
+			$('header h1 span').hover(function(){
 				
 				if($(this).hasClass('show-dave')) {
 					$('header nav').removeClass('nav-open open-dave open-jo open-both');
@@ -40,6 +40,10 @@
 			});
 			$('.nav-bg').hover(function(){
 				$('header nav').removeClass('nav-open open-dave open-jo open-both');
+			});
+			$('header h1 a').click(function(){
+				
+				return false;
 			});
 			
 		},
