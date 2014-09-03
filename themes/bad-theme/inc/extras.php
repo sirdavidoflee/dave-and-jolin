@@ -96,5 +96,12 @@ function category_id_class( $classes ) {
 	}
 	return $classes;
 }
+function home_class($classes) {
+	if(is_home()){
+		$classes[] = 'home';
+		return $classes;
+	}
+}
 add_filter( 'post_class', 'category_id_class' );
 add_filter( 'body_class', 'category_id_class' );
+add_filter( 'body_class', 'home_class' );
