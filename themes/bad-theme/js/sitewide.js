@@ -51,13 +51,14 @@
 					$('header nav').addClass('nav-open open-both');
 				}
 			});
+			
 			$('.nav-bg').hover(function(){
 				$('header nav').removeClass('nav-open open-dave open-jo open-both');
 			});
 			$('header h1 a').click(function(){
-				if($('header nav').hasClass('nav-open')){
-					$('header nav').removeClass('nav-open open-dave open-jo open-both');
-				}
+				// if($('header nav').hasClass('nav-open')){
+				// 	$('header nav').removeClass('nav-open open-dave open-jo open-both');
+				// }
 				
 				return false;
 			});

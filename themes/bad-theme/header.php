@@ -59,7 +59,7 @@
 	
 	<header>
 		<div class="inner">
-			<h1><a href="/"><span class="show-dave">Dave</span> <span class="amp">&amp;</span> <span class="show-jo">Jolin</span></a></h1>
+			<h1><span class="show-dave">Dave</span> <span class="amp">&amp;</span> <span class="show-jo">Jolin</span></h1>
 		</div>
 		<nav>
 			<div class="nav-bg"></div>
