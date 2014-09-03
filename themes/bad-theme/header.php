@@ -91,6 +91,7 @@
 		<form action="/" method="get">
 			<input type="search" name="s" placeholder="Search" />
 		</form>
+		<a href="/" class="back-home">&lt; home</a>
 	</header>
 	
 <div id="page" class="hfeed site">

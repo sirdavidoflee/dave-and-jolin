@@ -40,6 +40,22 @@ header {
 			margin: 0 10px;
 		}
 	}
+	.back-home {
+		color: #000;
+		font-size: 14px;
+		left: 11px;
+		position: absolute;
+		text-decoration: none;
+		top: 105%;
+		
+		@include transition(all 0.3s ease);
+		
+		&:hover {
+			top: 113%;
+			
+			@include transform(rotate(20deg));
+		}
+	}
 	input {
 		border: none;
 		font-family: $general;
